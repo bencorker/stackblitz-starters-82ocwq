@@ -1,0 +1,46 @@
+[
+  {
+    "hotelName": "Atlantis The Palm",
+    "hotelImage": "https://images.destination2.co.uk/Hotels/superid/260809/aa.jpg",
+    "star": 5,
+    "pricing": [
+      {
+        "board": "HB",
+        "price": 1287.4,
+        "roomName": "Palm View Standard"
+      },
+      {
+        "board": "RO",
+        "price": 999.22,
+        "roomName": "Standard Room"
+      },
+      {
+        "board": "AI",
+        "price": 1723,
+        "roomName": "Ocean View"
+      }
+    ]
+  },
+  {
+    "hotelName": "Grand Hyatt Dubai",
+    "hotelImage": "https://images.destination2.co.uk/Hotels/superid/200496/1...jpg",
+    "star": 5,
+    "pricing": [
+      {
+        "board": "AI",
+        "price": 1723,
+        "roomName": "Resort Room"
+      },
+      {
+        "board": "RO",
+        "price": 723.22,
+        "roomName": "Resort Family Room"
+      },
+      {
+        "board": "HB",
+        "price": 862.45,
+        "roomName": "Resort Room"
+      }
+    ]
+  }
+]

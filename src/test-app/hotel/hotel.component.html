@@ -1,0 +1,57 @@
+<div style="display: flex; justify-content: flex-end; margin-bottom: 5px">
+  <button mat-raised-button color="primary">Refresh</button>
+</div>
+<div *ngFor="let hotel of hotelData">
+  <div style="display: flex; flex-direction: row">
+    <div
+      style="flex: 1 1 100%; max-width: 50%; font-size: 18px; display: flex; align-items: center"
+    >
+      {{ hotel.hotelName }}
+    </div>
+    <div
+      style="flex: 1 1 100%; max-width: 50%; font-size: 18px; display: flex; align-items: center"
+    >
+      {{ hotel.star }} Star
+    </div>
+    <div style="flex: 1 1 100%; max-width: 50%; font-size: 18px;">
+      <img [src]="hotel.hotelImage" style="max-width: 100%" />
+    </div>
+  </div>
+  <div style="display: flex; flex-direction: row">
+    <div
+      style="flex: 1 1 100%; max-width: 50%; font-size: 14px; display: flex; align-items: center;background: #d7d7d7; margin: 1px; padding: 1px 5px; text-transform: uppercase;"
+    >
+      Board Basis
+    </div>
+    <div
+      style="flex: 1 1 100%; max-width: 50%; font-size: 14px; display: flex; align-items: center; background: #d7d7d7; margin: 1px; padding: 1px 5px; text-transform: uppercase;"
+    >
+      Price
+    </div>
+    <div
+      style="flex: 1 1 100%; max-width: 50%; font-size: 14px; display: flex; align-items: center;background: #d7d7d7; margin: 1px; padding: 1px 5px; text-transform: uppercase;"
+    >
+      Room Name
+    </div>
+  </div>
+  <div
+    *ngFor="let pricing of hotel.pricing"
+    style="display: flex; flex-direction: row"
+  >
+    <div
+      style="flex: 1 1 100%; max-width: 50%; font-size: 14px; display: flex; align-items: center;background: #efefef; margin: 1px; padding: 1px 5px; "
+    >
+      {{ pricing.board }}
+    </div>
+    <div
+      style="flex: 1 1 100%; max-width: 50%; font-size: 14px; display: flex; align-items: center; background: #efefef; margin: 1px; padding: 1px 5px; "
+    >
+      {{ pricing.price }}
+    </div>
+    <div
+      style="flex: 1 1 100%; max-width: 50%; font-size: 14px; display: flex; align-items: center;background: #efefef; margin: 1px; padding: 1px 5px; "
+    >
+      {{ pricing.roomName }}
+    </div>
+  </div>
+</div>
